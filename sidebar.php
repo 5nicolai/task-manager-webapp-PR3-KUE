@@ -1,4 +1,5 @@
-/**
+<?php
+/*
  * File: sidebar.php
  * Description: Sidebar navigation for the task management tool.
  * * Author: Nicolai Treichel
@@ -6,6 +7,7 @@
  * Assignment: Komplexe Übung PR3-SU1
  * Date: 2026-02-22
  */
+?>
 
 <div class="sidebar">
     <h2>Aufgabenverwaltung</h2>
