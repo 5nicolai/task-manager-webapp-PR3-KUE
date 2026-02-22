@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        #bstBtn {
+            font-size: 18px;
+            color: aliceblue;
+            background: linear-gradient(45deg, violet 0 30%, Fuchsia 30% 70%, BlueViolet 70% 100%);
+            border-radius: 8px;
+        }
+        body {
+            height: 200vh; /* Macht die Seite doppelt so hoch wie dein Bildschirm */
+        }
+    </style>
+</head>
+
+<input type="number" name="number-one" required>
+<input type="number" name="number-two" required>
+<button id="bstBtn">Summe berechnen</button>
+<p id="solution"></p>
+<script>
+    const button = document.querySelector('button')
+    button.addEventListener('click', function () {
+
+const t1 = '123'
+    const t2 = 123
+    console.log(t1 === t2)
+
+        //countTo(5) telkjadlskö
+
+        const myArray = [1, 'zweites Element', false]
+        myArray.forEach(function(element, index, array){
+            window.console.log(`an Stelle ${index} des Arrays steht das Element: ${element}`)
+        })
+
+        const numberOne = document.querySelector('input[name="number-one"]')
+        const numberTwo = document.querySelector('input[name="number-two"]')
+        const solutionContainer = document.getElementById('solution')
+        const solution = Number.parseInt(numberOne.value) + Number.parseInt(numberTwo.value)
+        solutionContainer.innerText =  `${numberOne.value} + ${numberTwo.value} = ${solution} 
+        \n${"D:"}`
+        button.style = `background:hsl(${Math.floor(Math.random()*360)},80%, 50%, 0.8)`
+    })
+
+    
+
+    window.addEventListener('scroll', function() {
+        console.log("Du hast gescrollt!");
+
+        const clickEvent = new Event('click')
+        button.dispatchEvent(clickEvent)
+    })
+
+
+    function countTo(limit) {
+        for(let i = 1; i <= limit; i++){
+            window.console.log(i)
+        }
+    }
+
+
+</script>
