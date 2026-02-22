@@ -8,6 +8,9 @@
  * Date: 2026-02-22
  */
 
+// Start XAMPP and ensure MySQL is running.
+// Open the domain and start the session: http://localhost/task-manager-webapp-PR3-KUE/index.php
+
 require 'db.php'; // Include database connection
 
 $message = '';
