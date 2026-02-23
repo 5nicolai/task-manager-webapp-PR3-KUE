@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS task_management CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE task_management;
+
+CREATE TABLE IF NOT EXISTS Aufgaben (
+    id VARCHAR(8) PRIMARY KEY,
+    modul VARCHAR(3) NOT NULL,
+    referenz CHAR(6) NOT NULL,
+    aufgabentext VARCHAR(1000) NOT NULL,
+    verwendung DATE NOT NULL,
+    status INT(1) DEFAULT 0
+);
