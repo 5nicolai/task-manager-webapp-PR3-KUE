@@ -33,5 +33,6 @@ This project is a web-based task management tool developed for a university assi
 * Access the application via `http://localhost/task-manager-webapp-PR3-KUE/index.php`.
 * **Important Note:** To access the task management area (`manage_tasks.php`), use the password: **123**.
 
+## Preview
 ![Vorschau:](https://github.com/5nicolai/task-manager-webapp-PR3-KUE/blob/a28727fd25af2f213751db86b88899dcc6a54bbd/AufgabenErfassen.png)
 ![Vorschau2:](https://github.com/5nicolai/task-manager-webapp-PR3-KUE/blob/f0cb1194fc241f086e841018f994a03e69bb371b/AufgabenVerwalten.png)
