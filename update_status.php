@@ -5,7 +5,7 @@
  * Author: Nicolai Treichel
  * Matriculation Number: 1144582
  * Assignment: Komplexe Übung PR3-SU1
- * Date: 2026-02-23
+ * Submission Date: 28.02.2026
  */
 
 require 'db.php';
