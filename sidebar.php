@@ -9,8 +9,9 @@
  */
 ?>
 
+<!-- This file is included in both index.php and manage_tasks.php to provide consistent navigation. -->
 <div class="sidebar">
     <h2>Aufgabenverwaltung</h2>
-    <a href="index.php">Aufgabe erfassen (Komp. 1)</a>
-    <a href="verwaltung.php">Aufgaben verwalten (Komp. 2)</a>
+    <a href="index.php">Aufgabe erfassen</a>
+    <a href="manage_tasks.php">Aufgaben verwalten</a>
 </div>
