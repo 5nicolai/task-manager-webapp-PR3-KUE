@@ -1,78 +1,158 @@
 /**
  * File: style.css
- * Description: Main stylesheet for the layout and UI of the task management tool.
+ * Description: Main stylesheet for the first layout and UI of the task management tool.
  * * Author: Nicolai Treichel
  * Matriculation Number: 1144582
  * Assignment: Komplexe Übung PR3-SU1
  * Date: 2026-02-22
  */
 
+/* ==========================================================================
+   GLOBAL STYLES
+   ========================================================================== */
+
 body {
+    /* Set a clean, modern default font for the entire application */
     font-family: Arial, sans-serif;
+    
+    /* Remove default browser margins to ensure the layout touches the screen edges */
     margin: 0;
+    
+    /* Use CSS Flexbox to easily create a side-by-side layout (sidebar + main content) */
     display: flex;
+    
+    /* Ensure the body always takes up at least the full height of the browser window */
     min-height: 100vh;
 }
 
+/* ==========================================================================
+   SIDEBAR NAVIGATION
+   ========================================================================== */
+
 .sidebar {
+    /* Fixed width for the sidebar */
     width: 250px;
+    
+    /* Light gray background color */
     background-color: #f4f4f4;
+    
+    /* Add inner spacing so text doesn't touch the edges */
     padding: 20px;
+    
+    /* Add a subtle vertical line to separate the sidebar from the main content */
     border-right: 1px solid #ddd;
 }
 
 .sidebar a {
+    /* Make the links behave like block elements (taking up full width) for easier clicking */
     display: block;
+    
+    /* Inner spacing inside the buttons */
     padding: 10px;
+    
+    /* Space between the navigation links */
     margin-bottom: 5px;
+    
+    /* Remove the default underline from links */
     text-decoration: none;
+    
+    /* Dark gray text color */
     color: #333;
+    
+    /* Slightly darker gray background for the link buttons */
     background-color: #e9e9e9;
+    
+    /* Slightly rounded corners for a softer look */
     border-radius: 4px;
 }
 
 .sidebar a:hover {
+    /* Darken the background color when the user hovers over the link with their mouse */
     background-color: #d4d4d4;
 }
 
+/* ==========================================================================
+   MAIN CONTENT AREA
+   ========================================================================== */
+
 .content {
+    /* Tell this element to take up all the remaining space left by the sidebar */
     flex: 1;
+    
+    /* Add inner spacing so content doesn't touch the sidebar or screen edges */
     padding: 20px;
 }
 
+/* ==========================================================================
+   FORM ELEMENTS (Component 1)
+   ========================================================================== */
+
 .form-group {
+    /* Add vertical space between form input fields */
     margin-bottom: 15px;
 }
 
 .form-group label {
+    /* Put the label on its own line above the input field */
     display: block;
+    
+    /* Make the label text bold */
     font-weight: bold;
+    
+    /* Small space between the label and the input field below it */
     margin-bottom: 5px;
 }
 
-.form-group input, .form-group textarea {
+.form-group input, 
+.form-group textarea {
+    /* Make inputs take up 100% of their container's width... */
     width: 100%;
+    
+    /* ...but cap the maximum width so they don't get absurdly wide on large screens */
     max-width: 500px;
+    
+    /* Inner spacing for comfortable typing */
     padding: 8px;
+    
+    /* Subtle gray border */
     border: 1px solid #ccc;
+    
+    /* Match the rounded corners of the sidebar links */
     border-radius: 4px;
 }
 
+/* ==========================================================================
+   TABLE STYLES (Component 1 & 2)
+   ========================================================================== */
+
 table {
+    /* Make the table stretch across the full width of the content area */
     width: 100%;
+    
+    /* Merge cell borders together so there are no double lines between cells */
     border-collapse: collapse;
+    
+    /* Space above the table to separate it from preceding content */
     margin-top: 20px;
 }
 
-table, th, td {
+table, 
+th, 
+td {
+    /* Apply a 1px solid gray border to the table itself and every cell inside it */
     border: 1px solid #ccc;
 }
 
-th, td {
+th, 
+td {
+    /* Inner spacing so text doesn't touch the cell borders */
     padding: 10px;
+    
+    /* Align text to the left side of the cell (tables default to center for headers) */
     text-align: left;
 }
 
 th {
+    /* Give the table header row a light gray background to distinguish it from data rows */
     background-color: #f4f4f4;
 }
