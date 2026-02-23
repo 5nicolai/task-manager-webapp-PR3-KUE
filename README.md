@@ -1,14 +1,13 @@
-# task-manager-webapp-PR3-KUE
+# Task Management WebApp (Aufgabenverwaltung)
 Die vorliegende Arbeit befasst sich mit der Entwicklung eines webbasierten Tools zur Aufgabenverwaltung, welches darauf abzielt, die Effizienz und Organisation von Projekten innerhalb einer Hochschule zu verbessern.
 
 The present work deals with the development of a web-based task management tool aimed at improving the efficiency and organization of projects within a university.
-
-# Task Management WebApp (Aufgabenverwaltung)
 
 ## Project Information
 * **Author:** Nicolai Treichel
 * **Matriculation Number:** 1144582
 * **Assignment:** Komplexe Übung PR3-SU1
+* **Submission Date:** 28.02.2026
 
 ## Description
 This project is a web-based task management tool developed for a university assignment. It allows users to create new tasks (Component 1) and manage, filter, or update the status of existing tasks asynchronously (Component 2). The application is built using PHP, MySQL, HTML, CSS, and Vanilla JavaScript without any external frameworks.
