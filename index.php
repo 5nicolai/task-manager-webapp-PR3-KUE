@@ -15,21 +15,6 @@ require 'db.php'; // Include database connection
 
 $message = '';
 
-// Handle form submission
-/**
- * Handles HTTP requests including GET and POST operations.
- * 
- * POST Function:
- * Processes form submissions from the client side. Handles the following operations:
- * - Create: Adds a new task to the system
- * - Update: Modifies an existing task's details
- * - Delete: Removes a task from the system
- * - Mark Complete: Updates task status to completed
- * 
- * The POST handler validates incoming data, performs necessary database operations,
- * and returns appropriate responses to the client.
- */
-// 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $modul = $_POST['modul'];
     $referenz = $_POST['referenz'];
@@ -50,6 +35,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     $stmt->close();
 }
+
+// Handle form submission
+/**
+ * Handles HTTP requests including GET and POST operations.
+ * 
+ * POST Function:
+ * Processes form submissions from the client side. Handles the following operations:
+ * - Create: Adds a new task to the system
+ * - Update: Modifies an existing task's details
+ * - Delete: Removes a task from the system
+ * - Mark Complete: Updates task status to completed
+ * 
+ * The POST handler validates incoming data, performs necessary database operations,
+ * and returns appropriate responses to the client.
+ */
+
 
 // Get total count of tasks
 $countResult = $mysqli->query("SELECT COUNT(*) AS total FROM Aufgaben");
